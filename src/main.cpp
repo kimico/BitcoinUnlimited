@@ -5383,10 +5383,11 @@ std::string GetWarnings(const std::string &strFor)
 
     if (fLargeWorkForkFound)
     {
-        strStatusBar = strRPC =
+        strStatusBar =
             "Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.";
         strGUI =
             _("Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.");
+        strRPC = "";
     }
     else if (fLargeWorkInvalidChainFound)
     {
